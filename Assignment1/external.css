@@ -20,6 +20,11 @@
 
 * {box-sizing: border-box;}
 
+.two_words {
+  color: red;
+  font-weight: bold;
+}
+
 h1.page_heading {
    padding-left: 20px;
    text-align: center;
@@ -141,3 +146,5 @@ h1.resume{
 }
 
 ul.resume_list {list-style-type: square;}
+
+
