@@ -8,6 +8,11 @@
 </head>
 
 <body>
+  <div class="navBar">
+    <p><a href="http://codd.cs.gsu.edu/~wlyons2/Assignments/1/index.html" target="_blank" >Home</a></p>
+  </div>
+  <br>
+  <br>
   <h2>Form Validation</h2>
   <p>HTML 5 and Server Side Validation</p>
 
@@ -29,12 +34,15 @@
       Zip: <input type="text" name="zip" placeholder="30303" pattern="[0-9]{5}"
         oninvalid="setCustomValidity('Enter 5 digit Zipcode')" onchange="try{setCustomValidity('')}catch(e){}">
       <br><br>
-      <input type="submit" name="submit" value="Submit">
+      <input type="submit" name="submitVal" value="Submit" formaction="validateConfirm.php">
       <br><br>
-      <input type="button" name="submitNoHTML" value="Submit Without HTML Valication">
+      <input type="submit" name="submit" value="Submit Without HTML Valication">
     </form>
   </div>
 
+  <div class="footer">
+    <p>A<span style="font-size:smaller">BOUT</span> U<span style="font-size:smaller">S</span></p>
+  </div>
 </body>
 
 </html>

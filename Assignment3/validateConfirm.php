@@ -1,20 +1,22 @@
-<!-- contains html input form and client-side validation -->
+<!-- php server-side validation -->
 
 <?php
+include 'validationUtilities.php';
+
 $email = "nothing@nothing.com";
 $name = $state = "";
 $birthday = date("m/d/Y");
 $age = 0;
 $zip = 00000;
 
-if (isset($_POST["submit"])) {
+if (isset($_POST["submitVal"])) {
     $email = ($_POST["email"]);
     $name = ($_POST["name"]);
-    $birthday = ($_POST["birthday"]);
-    $age = ($_POST["age"]);
+    $birthday = isValidDate($_POST["birthday"]);
+    $age = fIsValidRange(($_POST["age"]), 1, 130);
     $state = ($_POST["state"]);
-    $zip = ($_POST["zip"]);
-
+    $zip = fIsValidZipcode($_POST["zip"]);
+    
     echo "<h2>Form Details:</h2>";
     echo "Email: " . $email;
     echo "<br>";
@@ -29,16 +31,4 @@ if (isset($_POST["submit"])) {
     echo "Zip: " . $zip;
 }
 
-// function test_input($data)
-// {
-//     $data = trim($data);
-//     $data = stripslashes($data);
-//     $data = htmlspecialchars($data);
-//     return $data;
-// }
-// function test_bday($data)
-// {
-//     $data = trim($data);
-//     $data = htmlspecialchars($data);
-//     return $data;
-// }
+?>
