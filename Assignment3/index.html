@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Assignment 3</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <h2>Form Validation</h2>
+  <p>HTML 5 and Server Side Validation</p>
+
+  <div class="forms">
+    <form method="post" action="validate.php">
+      E-mail: <input type="email" name="email" placeholder="something@email.com">
+      <br><br>
+      First Name: <input type="text" name="name" placeholder="Name">
+      <br><br>
+      Birthday: <input type="date" title="mm/dd/yyyy" name="birthday" placeholder="01/01/2000"
+        pattern="[0-1][0-9]/[0-3][0-9]/[1-2][0-9]{3}" oninvalid="setCustomValidity('mm/dd/yyyy')"
+        onchange="try{setCustomValidity('')}catch(e){}">
+      <br><br>
+      Age: <input type="number" name="age" placeholder="20" maxlength="3">
+      <br><br>
+      State: <input type="text" name="state" placeholder="GA" pattern="[A-Za-z]{2}"
+        oninvalid="setCustomValidity('Example: GA or ga')" onchange="try{setCustomValidity('')}catch(e){}">
+      <br><br>
+      Zip: <input type="text" name="zip" placeholder="30303" pattern="[0-9]{5}"
+        oninvalid="setCustomValidity('Enter 5 digit Zipcode')" onchange="try{setCustomValidity('')}catch(e){}">
+      <br><br>
+      <input type="submit" name="submit" value="Submit">
+      <br><br>
+      <input type="button" name="submitNoHTML" value="Submit Without HTML Valication">
+    </form>
+  </div>
+
+</body>
+
+</html>
