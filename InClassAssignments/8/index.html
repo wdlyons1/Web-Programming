@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>In Class Assignment 8</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="navBar">
+    <p><a href="http://codd.cs.gsu.edu/~wlyons2/Assignments/1/index.html" target="_blank" >Home</a></p>
+  </div>
+  <br>
+  <br>
+
+  <h2>Question 1</h2>
+  <p>
+    CREATE TABLE Products (<br>
+	ProductID INT(11) NOT NULL AUTO_INCREMENT,<br>
+        ProductName varchar(40),<br>
+        SupplierID INT(11) DEFAULT NULL,<br>
+        CategoryID INT(11) DEFAULT NULL,<br>
+        QuantityPerUnit varchar(20) DEFAULT NULL,<br>
+        UnitPrice decimal(10,4) DEFAULT 0.0000,<br>
+        UnitsInStock smallint(2) DEFAULT 0,<br>
+        UnitsOnOrder smallint(2) DEFAULT 0,<br>
+        ReorderLevel smallint(2) DEFAULT 0,<br>
+        Discontinued BIT(1) NOT NULL DEFAULT 0,<br>
+        PRIMARY KEY(ProductID)<br>
+    );<br>
+  </p>
+  <img src="images/question1.png" alt="Question 1">
+  <br>
+
+  <h2>Question 2</h2>
+  <p>
+    INSERT INTO `Products` (`ProductID`, `ProductName`, `SupplierID`, `CategoryID`,<br>	`QuantityPerUnit`, `UnitPrice`, `UnitsInStock`, `UnitsOnOrder`, `ReorderLevel`,<br>	`Discontinued`) VALUES<br>	(1, 'Chai', 1, 1, '10 boxes x 20 bags', '18.0000', 39, 0, 10, b'0'),<br>	(2, 'Chang', 1, 1, '24 - 12 oz bottles', '19.0000', 17, 40, 25, b'0'),<br>	(3, 'Aniseed Syrup', 1, 2, '12 - 550 ml bottles', '10.0000', 13, 70, 25, b'0'),<br>
+	...<br>
+    );<br>
+  </p>
+  <img src="images/question2.png" alt="Question 2">
+  <br>
+
+  <h2>Question 3</h2>
+  <p>
+    SELECT ProductName, QuantityPerUnit FROM Products;
+  </p>
+  <img src="images/question3.png" alt="Question 3">
+  <br>
+
+<h2>Question 4</h2>
+  <p>
+    SELECT ProductID, ProductName<br>
+	FROM Products<br>
+	WHERE Discontinued != 0<br>
+    ;<br>
+  </p>
+  <img src="images/question4.png" alt="Question 4">
+  <br>
+
+<h2>Question 5</h2>
+  <p>
+    SELECT ProductID, ProductName<br>
+	FROM Products<br>
+	WHERE Discontinued = 0<br>
+    ;<br>
+  </p>
+  <img src="images/question5.png" alt="Question 5">
+  <br>
+
+<h2>Question 6</h2>
+  <p>
+    SELECT ProductName, UnitPrice<br>
+	FROM Products<br>
+	WHERE UnitPrice = (SELECT MAX(UnitPrice) FROM Products)<br>
+	UNION ALL<br>
+	SELECT ProductName, UnitPrice<br>
+	FROM Products<br>
+	WHERE UnitPrice = (SELECT MIN(UnitPrice) FROM Products)<br>
+    ;    <br>
+  </p>
+  <img src="images/question6.png" alt="Question 6">
+  <br>
+
+<h2>Question 7</h2>
+  <p>
+    SELECT ProductID, ProductName, UnitPrice<br>
+	FROM Products<br>
+	WHERE (UnitPrice < 20.0000)<br>
+    ;    <br>
+  </p>
+  <img src="images/question7.png" alt="Question 7">
+  <br>
+
+<h2>Question 8</h2>
+  <p>
+    SELECT ProductID, ProductName, UnitPrice<br>
+	FROM Products<br>
+	WHERE (UnitPrice < 25.0000)<br>
+	AND (UnitPrice > 15.000)<br>
+    ;<br>
+  </p>
+  <img src="images/question8.png" alt="Question 8">
+  <br>
+
+<h2>Question 9</h2>
+  <p>
+    SELECT ProductID, ProductName, UnitPrice<br>
+	FROM Products<br>
+	WHERE UnitPrice > (SELECT AVG(UnitPrice) FROM Products)<br>
+    ;<br>
+  </p>
+  <img src="images/question9.png" alt="Question 9">
+  <br>
+
+<h2>Question 10</h2>
+  <p>
+    SELECT ProductID, ProductName, UnitPrice<br>
+	FROM Products<br>
+	ORDER BY UnitPrice DESC<br>
+	LIMIT 10<br>
+    ;<br>
+  </p>
+  <img src="images/question10.png" alt="Question 10">
+  <br>
+
+<h2>Question 11</h2>
+  <p>
+    SELECT COUNT(*) AS Current<br>
+	FROM Products<br>
+	WHERE Discontinued = 0<br>
+	UNION ALL<br>
+	SELECT COUNT(*) AS Discontinued<br>
+	FROM Products<br>
+	WHERE Discontinued = 1<br>
+    ;<br>
+  </p>
+  <img src="images/question11.png" alt="Question 11">
+  <br>
+
+<h2>Question 12</h2>
+  <p>
+    SELECT ProductName, UnitsOnOrder, UnitsInStock<br>
+	FROM Products<br>
+	WHERE UnitsOnOrder > UnitsInStock<br>
+    ;<br>
+  </p>
+  <img src="images/question12.png" alt="Question 12">
+  <br>
+
+
+</body>
+
+</html>

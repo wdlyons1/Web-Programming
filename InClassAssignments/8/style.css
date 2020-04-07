@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Caladea&display=swap');
+
+body {
+
+	font-family: 'Caladea', serif;
+	background-image: radial-gradient(white, lightgrey);
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+
+.navBar {
+	text-align: left;
+	padding-left: 1em;
+	width: 100%;
+	left: 0;
+	top: 0;
+	position: fixed;
+	background-color: darkgrey;
+	font-family: 'Caladea', serif;
+}
+
+.footer {
+	font-size: x-small;
+	width: 100%;
+	background-color: darkslategrey;
+	color: white;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+	font-family: 'Caladea', serif;
+}
