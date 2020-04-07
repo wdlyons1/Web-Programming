@@ -1,0 +1,57 @@
+
+
+
+
+h1, h2 {
+  text-align: center;
+}
+
+.row {
+    display: inline-block;
+    float: left;
+   margin-left: 10%;
+   margin-right: 10%;
+}
+
+.bottom_row{
+ margin-top: 40%;
+ 
+
+}
+
+.right_column{
+   float: right;
+   width: 50%;
+   border: 5px dashed red;
+   padding: 2% 3%;
+   height: 400px;
+
+}
+
+.left_column{
+   float: left;
+   width: 30%;
+   height: 400px;
+   border: 4px dashed red;
+   padding: 2% 3%;
+
+
+
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+img {
+   width: 200px;
+   float: right;
+}
+
+
+.fixed_row{
+  position: fixed;
+  bottom: 5px;
+}

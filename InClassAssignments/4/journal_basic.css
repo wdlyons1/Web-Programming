@@ -1,0 +1,26 @@
+.green_border {
+  border: 5px green solid;
+}
+
+.red_border {
+  border: 5px red solid;
+}
+
+.orange_border {
+  border: 5px orange solid;
+  margin: 2px;
+}
+
+.purple_border {
+  border: 5px purple solid;
+  margin-left: 2px;
+}
+
+.blue_border {
+  border: 5px blue solid;
+
+}
+
+.no_padding {
+
+}

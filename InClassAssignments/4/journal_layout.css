@@ -1,0 +1,71 @@
+.big{
+  background-image: url("back.png");
+}
+  
+.green_border {
+  border: 10px white solid;
+  margin-top: 10px;
+  background-color:white;
+}
+
+.back{
+
+  display: block;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.red_border {
+  border: none;
+  background-color:#A8F0F0;
+  text-align: right;
+
+}
+
+.orange_border {
+  border: none;
+  font-size:14pt;
+  margin: 5px;
+
+}
+
+.purple_border {
+  border: none;
+  border-bottom: 2px blue dashed;
+  margin-left: 5px;
+}
+
+.blue_border {
+  border: 4px #C2E9E9 solid;
+  overflow: auto;
+  background-color: #E8FBFB;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.no_padding {
+  padding: 0px;
+  margin-top: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
+.spat {
+  height: 150px;
+  width: 150px;
+  float: right;
+}
+
+.cookie{
+  height: 150px;
+  width: 200px;
+  float: right;
+
+}
+
+.validator{
+  height: 35px;
+  width: 100px;
+}
+
