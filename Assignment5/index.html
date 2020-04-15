@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Assignment 5</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<!-- Nav Bar -->
+	<div class="topnav">
+		<a href="http://codd.cs.gsu.edu/~wlyons2/Assignments/1/index.html">Home</a>
+	 	<a class="active" href="http://codd.cs.gsu.edu/~wlyons2/Assignments/5/index.html">Assignment5 Home</a>
+ 		<a href="http://codd.cs.gsu.edu/~wlyons2/Assignments/5/display.php">Display</a> 	
+	 	<a href="http://codd.cs.gsu.edu/~wlyons2/Assignments/5/newpurchase.html">Add New Purchase</a> 		
+		<a href="http://codd.cs.gsu.edu/~wlyons2/Assignments/5/query.html">Search by Supplier ID</a> 
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="box">
+		<table>
+			<tr>
+				<td class="question">Question 1:</td>
+				<td>create table Purchases(<br> PurchaseNo char(4) NOT
+					NULL,<br> SupplierID char(4) NOT NULL,<br> Date DATE NOT
+					NULL,<br> Quantity int(4) NOT NULL,<br> Description
+					varchar(40) NOT NULL, <br> Price decimal(5,2) NOT NULL,<br>
+					Primary Key(PurchaseNo)<br> );
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><img src="images/1.png"></td>
+			</tr>
+		</table>
+		<br> <br> <br> <br>
+		<table>
+			<tr>
+				<td class="question">Question 2:</td>
+				<td>INSERT INTO
+					Purchases(PurchaseNo,SupplierID,Date,Quantity,Description,Price)
+					VALUES ('P100','S101','2010/03/01',100,'T-shirts Blue XL',4.52);<br>
+					INSERT INTO
+					Purchases(PurchaseNo,SupplierID,Date,Quantity,Description,Price)
+					VALUES ('P101','S102','2010/03/01',30,'T-shirts Red L',3.44);<br>
+					INSERT INTO
+					Purchases(PurchaseNo,SupplierID,Date,Quantity,Description,Price)
+					VALUES ('P102','S103','2010/03/04',45,'Assorted Band Logos',0.60);<br>
+					INSERT INTO
+					Purchases(PurchaseNo,SupplierID,Date,Quantity,Description,Price)
+					VALUES ('P103','S101','2010/03/06',200,'T-shirts Black L',4.70);<br>
+					INSERT INTO
+					Purchases(PurchaseNo,SupplierID,Date,Quantity,Description,Price)
+					VALUES ('P104','S101','2010/03/07',150,'T-shirts Black XL',4.60);<br>
+					INSERT INTO
+					Purchases(PurchaseNo,SupplierID,Date,Quantity,Description,Price)
+					VALUES ('P105','S104','2010/03/10',190,'T-shirts Blue L
+					Longsleeved',5.60);<br> INSERT INTO
+					Purchases(PurchaseNo,SupplierID,Date,Quantity,Description,Price)
+					VALUES ('P106','S101','2010/03/15',60,'T-shirts Blue XL',4.52);<br>
+					INSERT INTO
+					Purchases(PurchaseNo,SupplierID,Date,Quantity,Description,Price)
+					VALUES ('P107','S103','2010/03/21',15,'Assorted Band Logos',0.60);<br>
+					INSERT INTO
+					Purchases(PurchaseNo,SupplierID,Date,Quantity,Description,Price)
+					VALUES ('P108','S101','2010/03/22',55,'T-shirts Red L',3.70);<br>
+					INSERT INTO
+					Purchases(PurchaseNo,SupplierID,Date,Quantity,Description,Price)
+					VALUES ('P109','S105','2010/03/22',50,'Assorted Band Logos',0.70);<br>
+					INSERT INTO
+					Purchases(PurchaseNo,SupplierID,Date,Quantity,Description,Price)
+					VALUES ('P110','S102','2010/03/22',40,'T-shirts Blue L
+					Longsleeved',5.30);<br> INSERT INTO
+					Purchases(PurchaseNo,SupplierID,Date,Quantity,Description,Price)
+					VALUES ('P111','S101','2010/03/25',140,'T-shirts Blue S',4.12);<br>
+					INSERT INTO
+					Purchases(PurchaseNo,SupplierID,Date,Quantity,Description,Price)
+					VALUES ('P112','S102','2010/03/27',10,'T-shirts Red XL
+					Longsleeved',5.10);<br> INSERT INTO
+					Purchases(PurchaseNo,SupplierID,Date,Quantity,Description,Price)
+					VALUES ('P113','S101','2010/03/28',15,'Assorted Band Logos',0.80);<br>
+					INSERT INTO
+					Purchases(PurchaseNo,SupplierID,Date,Quantity,Description,Price)
+					VALUES ('P114','S102','2010/03/30',25,'T-shirts Blue XL',4.60);<br>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><img src="images/2.png" alt="Question 2"></td>
+			</tr>
+		</table>
+<br> <br> <br> <br>
+                <table>
+                        <tr>
+                                <td class="question">Question 3:</td>
+				<td><a href="http://codd.cs.gsu.edu/~wlyons2/Assignments/5/newpurchase.html">Add New Purchases</a></td>
+			</tr>
+		</table>
+<br> <br> <br> <br>
+                <table>
+                        <tr>
+                                <td class="question">Question 4:</td>
+                                <td><a href="http://codd.cs.gsu.edu/~wlyons2/Assignments/5/query.html">Search by Supplier ID</a></td>
+                        </tr> 	
+		</table>
+	</div>
+</body>
+</html>		

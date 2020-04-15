@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Assignment 5</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<!-- Nav Bar -->
+	<div class="topnav">
+		<a href="http://codd.cs.gsu.edu/~wlyons2/Assignments/1/index.html">Home</a>
+	 	<a href="http://codd.cs.gsu.edu/~wlyons2/Assignments/5/index.html">Assignment5 Home</a> 
+	 	<a href="http://codd.cs.gsu.edu/~wlyons2/Assignments/5/display.php">Display</a> 		
+	 	<a class="active" href="http://codd.cs.gsu.edu/~wlyons2/Assignments/5/newpurchase.html">Add New Purchase</a> 	
+	 	<a href="http://codd.cs.gsu.edu/~wlyons2/Assignments/5/query.html">Search by Supplier ID</a> 
+	</div>
+	<br>
+	<br>
+	<br>
+	<form action="update.php" method="post">
+	<div class="box">
+
+	<h1 style="text-align:center;">Add New Purchase</h1>
+		<table class="tableCenter">
+			<tr>
+				<td>Purchase Number:</td>
+				<td><input required type="text" name="purchaseNo" placeholder="P000"></td>
+			</tr>
+			<tr>
+				<td>Supplier ID:</td>
+				<td><input required type="text" name="supplierID" placeholder="S000"></td>
+			</tr>
+			<tr>
+				<td>Date:</td>
+				<td><input required type="date" name="date" placeholder="YYYY-MM-DD"
+					pattern="[1,2][0-9]{3}-[0-9]{2}-[0-9]{2}"></td>
+			</tr>
+			<tr>
+				<td>Quantity:</td>
+				<td><input required type="text" name="quantity"></td>
+			</tr>
+			<tr>
+				<td>Description:</td>
+				<td><input required type="text" name="description"></td>
+			</tr>
+			<tr>
+				<td>Price:</td>
+				<td><input required type="number" name="price" placeholder="1.00"
+					step="0.01" min="0"></td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="submit"></td>
+			</tr>
+		</table>
+	</div>
+	</form>
+
+</body>
+</html>

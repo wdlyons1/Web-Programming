@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Caladea&display=swap');
+
+body {
+
+	font-family: 'Caladea', serif;
+	background-image: radial-gradient(white, lightgrey);
+
+
+}
+
+.topnav {
+  background-color: darkgrey;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: grey;
+  color: white;
+}
+
+.footer {
+	font-size: x-small;
+	width: 100%;
+	background-color: darkslategrey;
+	color: white;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+	font-family: 'Caladea', serif;
+}
+
+.question{
+	vertical-align: top;
+	font-weight: 900;
+}
+
+img{
+/* 	width: 500px; */
+	max-width: 100%;
+}
+
+td{
+	padding-left: 15px;
+	padding-right: 15px;
+	min-width:100px;
+}
+
+.box{
+	width: 84%;
+	margin: 0 auto;
+
+}
+
+.center{
+	text-align:center;
+	margin: auto;
+}
+
+.centerTable{
+	//width:80%;
+	margin: auto;
+}
+
+.tableCenter{
+	//width:50%;
+	margin: auto;
+}
