@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Assignment 4: Part C</title>
+	<link rel="stylesheet" type="text/css" href="styleC.css">
+	<script type="text/javascript" src="js1.js"></script>
+</head>
+
+<body>
+
+	<!-- Live Version
+	<div class="topnav">
+		<a href="#home">All Assignments</a>
+		<a href="http://codd.cs.gsu.edu/~wlyons2/Assignments/4/index.html">Assignment 4 Home</a>
+		<a href="http://codd.cs.gsu.edu/~wlyons2/Assignments/4/part1.html">Part A</a>
+		<a href="http://codd.cs.gsu.edu/~wlyons2/Assignments/4/part2.html">Part B</a>
+		<a class="active" href="http://codd.cs.gsu.edu/~wlyons2/Assignments/4/part3.html">Part C</a>
+	</div>
+-->
+
+	<!--Local Version-->
+	<div class="topnav">
+		<a href="#home">All Assignments</a>
+		<a href="file:///Users/williamlyons/Sites/Web-Programming/Assignments/4/index.html">Assignment 4 Home</a>
+		<a href="file:///Users/williamlyons/Sites/Web-Programming/Assignments/4/part1.html">Part 1</a>
+		<a href="file:///Users/williamlyons/Sites/Web-Programming/Assignments/4/part2.html">Part 2</a>
+		<a class="active" href="file:///Users/williamlyons/Sites/Web-Programming/Assignments/4/part3.html">Part 3</a>
+	</div>
+
+	<div class="time">
+		<p id="time">00:00</p>
+	</div>
+
+	<div class="center">
+		<h1>Choose Your difficulty</h1>
+
+		<form method="POST">
+			<p>How many Pictures</p>
+			<input type="radio" id="8pics" name="pics" value="8pics" checked="checked">
+			<label for="8pics">8 Pictures</label><br>
+			<input type="radio" id="10pics" name="pics" value="10pics">
+			<label for="10pics">10 Pictures</label><br>
+			<input type="radio" id="12pics" name="pics" value="12pics">
+			<label for="12pics">12 Pictures</label>
+
+			<br>
+
+			<p>Choose Level of Difficulty</p>
+			<input type="radio" id="easy" name="difficulty" value="easy" checked="checked">
+			<label for="easy">Easy</label><br>
+			<input type="radio" id="medium" name="difficulty" value="medium">
+			<label for="medium">Medium</label><br>
+			<input type="radio" id="hard" name="difficulty" value="hard">
+			<label for="hard">Hard</label>
+
+			<br>
+			<p>Wrong Guesses Left: <span id="wguesses"></span></p>
+			<br>
+
+			<input type="button" id="" onclick="choose();" value="Submit">
+		</form>
+	</div>
+	<table id="table1"></table>
+
+</body>
+
+</html>

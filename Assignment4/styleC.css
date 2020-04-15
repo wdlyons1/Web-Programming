@@ -1,0 +1,60 @@
+.topnav {
+  background-color: darkgrey;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: grey;
+  color: white;
+}
+
+.center{
+	width: 40%;
+	margin: 5% auto;
+	text-align: center;
+}
+
+table {
+  border: 1px solid black;
+  table-layout: fixed;
+  width: 50%;
+  margin: auto;
+  max-height: 100%;
+}
+
+th,
+td {
+  border: 1px solid black;
+  width: 100px;
+  overflow: hidden;
+}
+
+tr {
+	height: 100px;
+}
+
+img{
+	margin: auto;
+}
+.time{
+  text-align: right;
+  margin: 3% 5%;
+  font-size: 2em;
+  font-weight: bold;
+}

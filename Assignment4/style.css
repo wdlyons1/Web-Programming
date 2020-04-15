@@ -1,0 +1,75 @@
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: darkgrey;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: grey;
+  color: white;
+}
+
+.center{
+	width: 40%;
+	margin: 5% auto;
+	text-align: center;
+}
+
+.mysteryNumber{
+	border: 1px black solid; 
+	width: 50%;
+	margin: 0 auto;
+}
+
+table{
+  margin: auto;
+  text-align: left; 
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px 20px;
+}
+
+.time{
+  text-align: right;
+  margin: 3% 5%;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+input{
+  font-size: 2em;
+  font-weight: bold;
+}
+
+table.matching {
+  border: 1px red solid;
+
+}
+td.size {
+  height: 1inch;
+  width: 1inch;
+}
+
+.myDiv{
+  border: 1px black solid;
+
+}
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>Assignment 4: Part A</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="js1.js"></script>
+</head>
+
+<body>
+	<!-- Nav Bar -->
+	<!-- Live Version
+	<div class="topnav">
+		<a href="#home">All Assignments</a>
+		<a href="http://codd.cs.gsu.edu/~wlyons2/Assignments/4/index.html">Assignment 4 Home</a>
+		<a class="active" href="http://codd.cs.gsu.edu/~wlyons2/Assignments/4/part1.html">Part A</a>
+		<a href="http://codd.cs.gsu.edu/~wlyons2/Assignments/4/part2.html">Part B</a>
+		<a href="http://codd.cs.gsu.edu/~wlyons2/Assignments/4/part3.html">Part C</a>
+	</div>
+-->
+
+	<!--Local Version-->
+	<div class="topnav">
+		<a href="#home">All Assignments</a>
+		<a href="file:///Users/williamlyons/Sites/Web-Programming/Assignments/4/index.html">Assignment 4 Home</a>
+		<a class="active" href="file:///Users/williamlyons/Sites/Web-Programming/Assignments/4/part1.html">Part A</a>
+		<a href="file:///Users/williamlyons/Sites/Web-Programming/Assignments/4/part2.html">Part B</a>
+		<a href="file:///Users/williamlyons/Sites/Web-Programming/Assignments/4/part3.html">Part C</a>
+	</div>
+
+	<div class="center">
+		<h1>Payroll Reporting</h1>
+		<button id="myBtn" onclick="myFunction()">Click here to enter hours</button>
+
+		<br>
+		<br>
+		<br>
+
+		<div id="myDiv" class="myDiv" style="display:none;">
+			<h3>Enter time for Employee <span id="employee"></span></h3>
+			<input type="number" min="-1" id="hours" placeholder="Hours" pattern="[0-9]3" autofocus="autofocus"><br>
+			<button onclick="add();">Enter</button>	
+			<br>
+			<p id="error" ></p>
+		</div>
+
+		<div id="report" style="display:none;">
+			<table  id="reportTable"></table><br>
+			<button onclick="restart();">Start over</button>	
+		</div>
+	</div>
+
+
+
+
+
+</body>
+
+</html>

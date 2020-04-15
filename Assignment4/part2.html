@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Assignment 4: Part B</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="js1.js"></script>
+</head>
+
+<body>
+
+	<!-- Live Version
+	<div class="topnav">
+		<a href="#home">All Assignments</a>
+		<a href="http://codd.cs.gsu.edu/~wlyons2/Assignments/4/index.html">Assignment 4 Home</a>
+		<a href="http://codd.cs.gsu.edu/~wlyons2/Assignments/4/part1.html">Part A</a>
+		<a class="active" href="http://codd.cs.gsu.edu/~wlyons2/Assignments/4/part2.html">Part B</a>
+		<a href="http://codd.cs.gsu.edu/~wlyons2/Assignments/4/part3.html">Part C</a>
+	</div>
+-->
+
+	<!--Local Version-->
+	<div class="topnav">
+		<a href="#home">All Assignments</a>
+		<a href="file:///Users/williamlyons/Sites/Web-Programming/Assignments/4/index.html">Assignment 4 Home</a>
+		<a href="file:///Users/williamlyons/Sites/Web-Programming/Assignments/4/part1.html">Part A</a>
+		<a class="active" href="file:///Users/williamlyons/Sites/Web-Programming/Assignments/4/part2.html">Part B</a>
+		<a href="file:///Users/williamlyons/Sites/Web-Programming/Assignments/4/part3.html">Part C</a>
+	</div>
+
+<div class="time">
+	<p id="time">00:00</p>
+</div>
+
+	<div class="center">
+		<h1>Welcome to the Guessing Game</h1>
+		<h5>Instructions:<br>Try to guess the mystery number between 1 and 100. If your guess is too high or low you will be notified. The quicker you guess the mystery number the greater your score.</h5>
+		<div class="mysteryNumber">
+			<h3>Guess the mystery number</h3>
+			<h1 id="mystery">?</h1>
+			<p>(1 - 100)</p>
+		</div>
+		<br>
+		<form method="POST">
+			<input type="number" id="guessNum"  autofocus="autofocus" pattern="[^.]" max="100" min="1" width="100"><br>
+			<input type="button" id="" value="Guess" onclick="guess();">
+		</form>
+		<h2 id="instructions">Enter an Integer to Begin</h2>
+
+		<table>
+			<tr>
+				<td>Last Guess: </td>
+				<td id="lastGuess"></td>
+			</tr>
+			<tr>
+				<td>Guesses Left: </td>
+				<td id="numGuesses">15</td>
+			</tr>
+		</table>
+	</div>
+	<p style="color: white;" id="answer"></p>
+</body>
+
+</html>
